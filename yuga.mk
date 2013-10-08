@@ -67,5 +67,8 @@ $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk
 # call hwui memory config
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
+# for Gecko to support mass storage
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.usb.config=mass_storage
+
 # Include non-opensource parts
 $(call inherit-product, vendor/sony/yuga/yuga-vendor.mk)
