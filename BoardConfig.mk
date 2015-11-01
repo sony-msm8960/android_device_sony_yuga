@@ -23,7 +23,9 @@ TARGET_OTA_ASSERT_DEVICE := C6602,C6603,C6606,yuga
 
 TARGET_SPECIFIC_HEADER_PATH += device/sony/yuga/include
 
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/yuga/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := \
+    device/sony/yuga/bluetooth \
+    hardware/libhardware_moz/include/hardware_moz/bluetooth/bluedroid
 
 TARGET_KERNEL_CONFIG := cm_fusion3_yuga_defconfig
 
